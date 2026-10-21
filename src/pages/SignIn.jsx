@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
-import { Eye, EyeOff, Loader2 } from "lucide-react";
+import { BookOpen, Eye, EyeOff, Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -28,6 +28,12 @@ function SignIn() {
   return (
     <div className="mx-auto flex min-h-screen w-full max-w-sm flex-col justify-center px-4 py-8">
       <div className="mb-8 text-center">
+        <div className="mb-6 flex items-center justify-center gap-2 font-semibold tracking-tight">
+          <span className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
+            <BookOpen className="size-4" />
+          </span>
+          Ruang Siswa
+        </div>
         <h1 className="text-2xl font-semibold tracking-tight">Welcome back</h1>
         <p className="mt-1.5 text-sm text-muted-foreground">
           Enter your email and password to continue
